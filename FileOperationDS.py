@@ -14,7 +14,7 @@ class Tree(object):
 
         _, parentNode, isParentPresent = self.__getChild(parentTree, self)
         if not isParentPresent:
-            raise Exception(f"Node {parentNode.data} does not exist !")
+            raise Exception(f"Node '{parentNode.data}' does not exist !")
 
         _, childNode, isChildPresent = self.__getChild(childTree, parentNode)
         if not isChildPresent:
@@ -28,7 +28,7 @@ class Tree(object):
 
         _, parentNode, isParentPresent = self.__getChild(parentTree, self)
         if not isParentPresent:
-            raise Exception(f"Node {parentNode.data} does not exist !")
+            raise Exception(f"Node '{parentNode.data}' does not exist !")
 
         idx, childNode, isChildPresent = self.__getChild(childTree, parentNode)
         if isChildPresent:
